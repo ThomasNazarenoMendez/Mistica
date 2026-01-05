@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
 
   /* Fondo */
-  background-image: url("/Imgs/fondo2.png");
+  background-image: url("../Imgs/fondo2.png");
   background-repeat: no-repeat;       /* que no se repita */
   background-position: center;        /* centrado */
   background-size: cover;             /* que cubra toda la pantalla */
@@ -268,11 +268,11 @@ los tamaños de letras de los titulos lo otro esta en cada lista mira los coment
 }
 
 /* Imágenes de cada card */
-.card-1 { background-image: url("Imgs/oraculo_rosa.jpg")}
-.card-2 { background-image: url("Imgs/aurora-tropical.jpg"); }
-.card-3 { background-image: url("Imgs/amanecer-rojo.jpg"); }
-.card-4 { background-image: url("Imgs/portal-holdmoser.jpg"); }
-.card-5 { background-image: url("Imgs/ritual-de-luna.jpg");}
+.card-1 { background-image: url("/Imgs/oraculo_rosa.jpg")}
+.card-2 { background-image: url("/Imgs/aurora-tropical.jpg"); }
+.card-3 { background-image: url("/Imgs/amanecer-rojo.jpg"); }
+.card-4 { background-image: url("/Imgs/portal-holdmoser.jpg"); }
+.card-5 { background-image: url("/Imgs/ritual-de-luna.jpg");}
 
 /* Botones de navegación */
 .carousel-btn {
@@ -356,7 +356,7 @@ los tamaños de letras de los titulos lo otro esta en cada lista mira los coment
       rgba(0,0,0,0.65) 85%,
       rgba(0,0,0,1) 100%
     ),
-    url("/Imgs/fondoGin2.jpg") center / cover no-repeat;
+    url(".../Imgs/fondoGin2.jpg") center / cover no-repeat;
 }
 
 /* transición suave compartida con secciones vecinas */
