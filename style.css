@@ -1,0 +1,80 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+.container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+
+/* Secciones */
+.section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: #fff;
+  text-decoration: none;
+  z-index: 1; /* las palabras siempre visibles */
+}
+
+.cocina {
+  background: #000;
+}
+
+.cocteleria {
+  background: #111;
+}
+
+/* Logo flotante */
+.logo-central {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;      /* ajustá tamaño */
+  height: auto;
+  z-index: 2;        /* arriba de todo */
+  pointer-events: none; /* no bloquea clicks */
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Hover desktop */
+        .section:hover {
+            transform: scale(1.02);
+        }
+
+
+        .cocina {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .cocteleria {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Responsive: en mobile se apilan */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .section {
+                width: 100%;
+                height: 50vh;
+            }
+        }
