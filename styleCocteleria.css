@@ -7,19 +7,18 @@
   box-sizing: border-box;
 }
 
-/* body */
 body {
-  min-height: 100vh;
+  background-color: #000;
+}
 
-  /* Fondo */
-  background-image: url("../Imgs/fondo2.png");
-  background-repeat: no-repeat;       /* que no se repita */
-  background-position: center;        /* centrado */
-  background-size: cover;             /* que cubra toda la pantalla */
-  background-attachment: fixed;       /* para que no se mueva al scrollear */
-
-  /* Suavizado de imagen */
-  image-rendering: auto;               /* evita pixelado */
+.fondo-sitio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
 /*===========================================================================*/
 
@@ -95,7 +94,7 @@ los tamaños de letras de los titulos lo otro esta en cada lista mira los coment
   align-items: center;     /* vertical */
   color: #fff;
   margin-top: 2rem;
-  font-size: 31px;
+  font-size: large;
 }
 
 
@@ -206,7 +205,7 @@ los tamaños de letras de los titulos lo otro esta en cada lista mira los coment
 
 /* Textos */
 .texto-top {
-  font-family: 'KapsalonBrush', cursive;
+  font-family: 'KapsalonBrush';
   font-size: 45px;
   color: #fff;
   transform: rotate(-10deg);
@@ -243,10 +242,10 @@ los tamaños de letras de los titulos lo otro esta en cada lista mira los coment
   color: #fff;
   text-align: center;
   z-index: 2;
-  margin-bottom: 1rem;
+  margin-bottom: -15rem;
   position: relative;
   display: inline-block;
-  padding-bottom: 6px;
+  
 }
 
 /* subrayado custom */
@@ -265,6 +264,15 @@ los tamaños de letras de los titulos lo otro esta en cada lista mira los coment
     transparent
   );
   opacity: 100;
+}
+
+
+.precioAutor {
+  font-weight: bold;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 /* Imágenes de cada card */
@@ -356,7 +364,7 @@ los tamaños de letras de los titulos lo otro esta en cada lista mira los coment
       rgba(0,0,0,0.65) 85%,
       rgba(0,0,0,1) 100%
     ),
-    url(".../Imgs/fondoGin2.jpg") center / cover no-repeat;
+    url("Imgs/fondoGin2.png?v=1") center / cover no-repeat;
 }
 
 /* transición suave compartida con secciones vecinas */
@@ -490,6 +498,12 @@ los tamaños de letras de los titulos lo otro esta en cada lista mira los coment
   VIENDE ESPUES ESTA ES LA UNICA LISTA QUE ES IGUAL PARA TODOS YA QUE ES IGUAL A LA DE 1111
 =========================*/
 
+.descripcion {
+  font-size: 18px;
+  color: #ccc;
+  margin-top: 3px;
+}
+
 .listaGin {
   margin-bottom: 20px;
   border: 2px solid #c59d5f; /* borde dorado suave */
@@ -529,7 +543,7 @@ los tamaños de letras de los titulos lo otro esta en cada lista mira los coment
   font-weight: bold;
   color: #fff;
   margin-left: 1rem;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .precio {
@@ -604,3 +618,23 @@ los tamaños de letras de los titulos lo otro esta en cada lista mira los coment
   }
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* FIX transiciones sin scroll */
+.gintoneria::before,
+.gintoneria::after {
+  left: 0;
+  width: 100%;
+}
+
+/* FIX DEFINITIVO Safari – fondo pixelado */
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+    image-rendering: auto;
+  }
+}

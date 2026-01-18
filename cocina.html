@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocina</title>
 
-    <link rel="stylesheet" href="styleCocina.css">
+    <link rel="stylesheet" href="styleCocina.css?v=20260101">
 
 
 </head>
 <body>
 
+
+  <img src="Imgs/fondo6.png?v=20260109" class="fondo-sitio" alt="">
 <!-- Nav -->    
 
 <nav class="navbar">
@@ -31,11 +34,11 @@
     <li><a href="#papasFritas">Papas fritas</a></li>
     <li><a href="#empanadas">Empanadas</a></li>
     <li><a href="#milanesas">Milanesas</a></li>
-    <li><a href="#comidaSinTacc">Comida sin TACC</a></li>
+    <li><a href="#SinTacc">Comida sin TACC</a></li>
     <li><a href="#vegetarianos">Apto Místicos Vegetarianos🌱</a></li>
     <li><a href="#picadas">Picadas</a></li>
     <li><a href="#carnes">Carnes al Plato</a></li>
-    <li><a href="#sandwichesFocaccia">Sándwich de Focaccia</a></li>
+    <li><a href="#sandwiches">Sándwich de Focaccia</a></li>
     <li><a href="#burgers">Burgers</a></li>
     <li><a href="#pizza">Pizza Romana</a></li>
   </ul>
@@ -46,200 +49,347 @@
 </main>
 
 <!-- ENTRADAS -->
-<div id="entradas" class="listaGastro">
 
+<div id="entradas"></div>
+
+<div class="listaSeccion">
   <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">ENTRADAS</h2>
+    <h2 class="tituloSecciones">ENTRADAS</h2>
   </div>
-
-  <ul class="lista-platos">
-    <li><span class="nombre-plato2">Provoleta Mística</span><span class="nombre-plato">Jamón crudo, rúcula y tomatitos cherry confitados</span><span class="precio-plato">$12.000</span></li>
-    <li><span class="nombre-plato2">Provoleta Argenta</span><span class="nombre-plato">Morrón asado y cebolla caramelizada</span><span class="precio-plato">$10.500</span></li>
-    <li><span class="nombre-plato2">Provoleta Clásica</span><span class="precio-plato">$9.000</span></li>
-    <li><span class="nombre-plato2">Tequeños venezolanos</span><span class="nombre-plato">3 y 6 unidades acompañados de salsa alioli y salsa picante en dip</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Chicken fingers</span><span class="nombre-plato">Tiras de pollo frito crocante</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Bastones de Mozzarella</span><span class="nombre-plato">(Salsas a elección bbq/ alioli/ cheddar/ picante)</span><span class="precio-plato"></span></li>
+  <ul class="lista-bebidas">
+    <li>
+      <div class="item-info">
+        <span class="nombre">Provoleta Mística</span>
+        <span class="descripcion">Jamón crudo, rúcula y tomatitos cherry confitados</span>
+      </div>
+      <span class="precio">$12.000</span>
+    </li>
+    <li>
+      <div class="item-info">
+        <span class="nombre">Provoleta Argenta</span>
+        <span class="descripcion">Morrón asado y cebolla caramelizada</span>
+      </div>
+      <span class="precio">$10.500</span>
+    </li>
+    <li>
+      <div class="item-info">
+        <span class="nombre">Provoleta Clásica</span>
+      </div>
+      <span class="precio">$9.000</span>
+    </li>
+  <li class="li-doble-precio">
+  <span class="nombre">Tequeños venezolanos</span>
+  <div class="descripciones-precios">
+    <div class="descripcion-item">
+      <span class="descripcion">3 unidades acompañados de salsa alioli y salsa picante en dip</span>
+      <span class="precio">$6.000</span>
+    </div>
+    <div class="descripcion-item">
+      <span class="descripcion">6 unidades acompañados de salsa alioli y salsa picante en dip</span>
+      <span class="precio">$12.300</span>
+    </div>
+  </div>
+</li>
+    <li>
+      <div class="item-info">
+        <span class="nombre">Palitos de pollo</span>
+        <span class="descripcion">Tiras de pollo frito crocante</span>
+      </div>
+      <span class="precio">$13.000</span>
+    </li>
+    <li>
+      <div class="item-info">
+        <span class="nombre">Mozzarellitas</span>
+        <span class="descripcion">Salsas a elección bbq/alioli/cheddar/picante</span>
+      </div>
+      <span class="precio">$9.000</span>
+    </li>
   </ul>
 </div>
 
 <!-- PAPAS FRITAS -->
-<div id="papasFritas" class="listaGastro">
+
+<div id="papasFritas"></div>
+
+<div class="listaSeccion">
   <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">PAPAS FRITAS</h2>
+    <h2 class="tituloSecciones">PAPAS FRITAS</h2>
   </div>
-  <ul class="lista-platos">
-    <li><span class="nombre-plato2">Clásicas</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Cheddar</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Cheddar y panceta</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Cheddar, panceta y verdeo</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Papas Lunares</span><span class="nombre-plato">Cheddar, salchicha, huevo revuelto, verdeo</span><span class="precio-plato"></span></li>
+  <ul class="lista-bebidas">
+    <li><div class="item-info"><span class="nombre">Clásicas</span></div><span class="precio">$11.000</span></li>
+    <li><div class="item-info"><span class="nombre">Cheddar</span></div><span class="precio">$12.000</span></li>
+    <li><div class="item-info"><span class="nombre">Cheddar y panceta</span></div><span class="precio">$12.800</span></li>
+    <li><div class="item-info"><span class="nombre">Cheddar, panceta y verdeo</span></div><span class="precio">$13.000</span></li>
+    <li><div class="item-info"><span class="nombre">Papas Lunares</span><span class="descripcion">Cheddar, salchicha, huevo revuelto, verdeo</span></div><span class="precio">$14.500</span></li>
   </ul>
 </div>
 
 <!-- ENSALADAS -->
-<div id="ensaladas" class="listaGastro">
+
+<div id="ensaladas"></div>
+
+<div class="listaSeccion">
   <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">ENSALADAS</h2>
+    <h2 class="tituloSecciones">ENSALADAS</h2>
   </div>
-  <ul class="lista-platos">
-    <li><span class="nombre-plato2">Ensalada combinada 4 gustos</span><span class="nombre-plato">Lechuga/ tomate / zanahoria / huevo / cebolla / rúcula</span><span class="precio-plato">$11.000</span></li>
-    <li><span class="nombre-plato2">Ensalada César</span><span class="nombre-plato">Lechuga, trozos de pan tostado, pollo, queso parmesano</span><span class="precio-plato"></span></li>
+  <ul class="lista-bebidas">
+    <li>
+      <div class="item-info">
+        <span class="nombre">Ensalada combinada 4 gustos</span>
+        <span class="descripcion">Lechuga, tomate, zanahoria, huevo, cebolla, rúcula</span>
+      </div>
+      <span class="precio">$11.000</span>
+    </li>
   </ul>
 </div>
 
 <!-- EMPANADAS -->
-<div id="empanadas" class="listaGastro">
-  <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">EMPANADAS</h2>
-  </div>
-  <ul class="lista-platos">
-    <li><span class="nombre-plato2">Jamón y queso</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Pollo</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Verdura</span><span class="precio-plato"></span></li>
-  </ul>
-</div>
 
-<!-- EMPANADAS ESPECIALES -->
-<div id="empanadasEspeciales" class="listaGastro">
+<div id="empanadas"></div>
+
+<div class="listaSeccion">
   <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">EMPANADAS ESPECIALES</h2>
+    <h2 class="tituloSecciones">EMPANADAS</h2>
   </div>
-  <ul class="lista-platos">
-    <li><span class="nombre-plato2">Vacío cortada a cuchillo</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Cheese Burger</span><span class="precio-plato"></span></li>
+  <ul class="lista-bebidas">
+	<li><div class="item-info"><span class="nombre">Carne</span></div><span class="precio">$3.000</span></li>
+    <li><div class="item-info"><span class="nombre">Jamón y queso</span></div><span class="precio">$2.900</span></li>
+    <li><div class="item-info"><span class="nombre">Pollo</span></div><span class="precio">$3.000</span></li>
+    <li><div class="item-info"><span class="nombre">Verdura</span></div><span class="precio">$2.900</span></li>
+	
+    <div class="titulo-container">
+    <h2 class="tituloSecciones">EMPANADAS ESPECIALES</h2>
+  </div>
+    <li><div class="item-info"><span class="nombre">Vacío cortado a cuchillo (horno/frita)</span></div><span class="precio">$3.500</span></li>
+    <li><div class="item-info"><span class="nombre">Cheese Burger</span></div><span class="precio">$3.500</span></li>
   </ul>
 </div>
 
 <!-- MILANESAS -->
-<div id="milanesas" class="listaGastro">
+
+<div id="milanesas"></div>
+
+<div class="listaSeccion">
   <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">MILANESAS</h2>
+    <h2 class="tituloSecciones">MILANESAS (de ternera) CON GUARNICIÓN</h2>
   </div>
-  <ul class="lista-platos">
-    <li><span class="nombre-plato2">Clásica</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Clásica</span><span class="nombre-plato">con spaguetti con crema y queso parmesano rallado</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Clásica a caballo</span><span class="nombre-plato">Con 2 huevos fritos</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Cheddar, panceta y verdeo fresco</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Jamón y queso</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Napolitana</span><span class="nombre-plato">salsa de tomate, muzarella, rodajas de tomate fresco y orégano</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Fugazza</span><span class="nombre-plato">Mozzarella, cebolla asada y orégano</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Calabresa</span><span class="nombre-plato">Salsa de tomate, Mozzarella y salamín</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">4 quesos</span><span class="nombre-plato">Mozzarella, provoleta, roquefort y cheddar</span><span class="precio-plato"></span></li>
+  <ul class="lista-bebidas">
+    <li><div class="item-info"><span class="nombre">Clásica</span></div><span class="precio">$15.000</span></li>
+    <li><div class="item-info"><span class="nombre">Clásica con spaguetti con crema y queso parmesano rallado</span></div><span class="precio">$15.000</span></li>
+    <li><div class="item-info"><span class="nombre">Clásica a caballo</span><span class="descripcion">2 huevos fritos</span></div><span class="precio">$15.400</span></li>
+    <li><div class="item-info"><span class="nombre">Cheddar, panceta y verdeo fresco</span></div><span class="precio">$16.200</span></li>
+    <li><div class="item-info"><span class="nombre">Jamón y queso</span></div><span class="precio">$16.000</span></li>
+    <li><div class="item-info"><span class="nombre">Napolitana</span><span class="descripcion">Salsa de tomate, mozarella, rodajas de tomate fresco y orégano</span></div><span class="precio">$16.00</span></li>
+    <li><div class="item-info"><span class="nombre">Fugazza</span><span class="descripcion">Mozzarella, cebolla asada y orégano</span></div><span class="precio">$16.200</span></li>
+    <li><div class="item-info"><span class="nombre">Calabresa</span><span class="descripcion">Salsa de tomate, Mozzarella y salamín</span></div><span class="precio">$16.800</span></li>
+    <li><div class="item-info"><span class="nombre">4 quesos</span><span class="descripcion">Mozzarella, provoleta, roquefort y cheddar</span></div><span class="precio">$17.000</span></li>
   </ul>
 </div>
 
 <!-- COMIDA SIN TACC -->
-<div id="comidaSinTacc" class="listaGastro">
+
+<div id="SinTacc"></div>
+
+<div class="listaSeccion">
   <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">COMIDA SIN TACC</h2>
+    <h2 class="tituloSecciones">COMIDA SIN TACC</h2>
   </div>
-  <ul class="lista-platos">
-    <li><span class="nombre-plato2">Empanadas de Jamón y queso</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Empanadas de Verdura</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Empanadas de Carne</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Empanadas de Pollo</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Pizza muzzarella individual</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Hamburguesa chesse con bbq</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Hamburguesa criolla</span><span class="nombre-plato">Cebolla y morrón salteado a la plancha y bbq</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Hamburguesa completa</span><span class="nombre-plato">Queso Cheddar, jamón cocido, lechuga, tomate, cebolla y morrón salteados y huevo a la plancha</span><span class="precio-plato"></span></li>
+  <ul class="lista-bebidas">
+    <li>
+      <div class="item-info">
+        <span class="nombre">Empanadas de Jamón y queso</span>
+      </div>
+      <span class="precio">$2.900</span>
+    </li>
+    <li>
+      <div class="item-info">
+        <span class="nombre">Empanadas de Verdura</span>
+      </div>
+      <span class="precio">$2.900</span>
+    </li>
+    <li>
+      <div class="item-info">
+        <span class="nombre">Empanadas de Carne</span>
+      </div>
+      <span class="precio">$3.000</span>
+    </li>
+    <li>
+      <div class="item-info">
+        <span class="nombre">Empanadas de Pollo</span>
+      </div>
+      <span class="precio">$3.000</span>
+    </li>
+    <li>
+      <div class="item-info">
+        <span class="nombre">Pizza muzzarella individual</span>
+      </div>
+      <span class="precio">$9.000</span>
+    </li>
+    <li>
+      <div class="item-info">
+        <span class="nombre">Hamburguesa chesse con bbq</span>
+      </div>
+      <span class="precio">$11.000</span>
+    </li>
+    <li>
+      <div class="item-info">
+        <span class="nombre">Hamburguesa criolla con cebolla y morrón salteado a la plancha y bbq</span>
+      </div>
+      <span class="precio">$11.500</span>
+    </li>
+    <li>
+      <div class="item-info">
+        <span class="nombre">Hamburguesa completa</span>
+        <span class="descripcion">Queso Cheddar, jamón cocido, lechuga, tomate, cebolla y morrón salteados y huevo a la plancha</span>
+      </div>
+      <span class="precio">$13.000</span>
+    </li>
   </ul>
 </div>
 
-<!-- VEGETARIANOS -->
-<div id="vegetarianos" class="listaGastro">
+<!-- VEGANOS / VEGETARIANOS -->
+
+<div id="vegetarianos"></div>
+
+<div class="listaSeccion">
   <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">APTO MÍSTICOS VEGETARIANOS/VEGANOS 🌱</h2>
+    <h2 class="tituloSecciones2">APTO MÍSTICOS VEGETARIANOS🥑</h2>
   </div>
-  <ul class="lista-platos">
-    <li><span class="nombre-plato2">Burger Power</span><span class="nombre-plato">Queso Cheddar, Medallon vegetariano, lechuga, tomate, huevo a la plancha, cebolla salteada, palta y salsa bigmac</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Focaccia Veggie</span><span class="nombre-plato">Sándwich en pan de focaccia con Queso tybo, cebolla y morrón salteado, Cherry confitado, rúcula y pesto de albahaca fresco</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Focaccia Vegan</span><span class="nombre-plato">Lechuga, tomate en rodajas, palta pisada con limón, cebolla caramelizada, mayonesa vegana</span><span class="precio-plato"></span></li>
+  <ul class="lista-bebidas">
+    <li>
+      <div class="item-info">
+        <span class="nombre">Burger Power</span>
+        <span class="descripcion">Queso Cheddar, Medallon vegetariano, lechuga, tomate, huevo a la plancha, cebolla salteada, palta y salsa bigmac</span>
+      </div>
+      <span class="precio">$14.000</span>
+    </li>
+    <li>
+      <div class="item-info">
+        <span class="nombre">Focaccia Veggie</span>
+        <span class="descripcion">Sándwich en pan de focaccia con Queso tybo, cebolla y morrón salteado, Cherry confitado, rúcula y pesto de albahaca fresco</span>
+      </div>
+      <span class="precio">$12.500</span>
+    </li>
   </ul>
 </div>
 
 
 <!-- PICADAS -->
-<div id="picadas" class="listaGastro">
+
+<div id="picadas"></div>
+
+<div class="listaSeccion">
   <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">PICADAS (2 y 4 personas)</h2>
+    <h2 class="tituloSecciones">PICADAS (2 y 4 personas)</h2>
   </div>
-  <ul class="lista-platos">
-    <li><span class="nombre-plato2">TABLA FRÍA</span><span class="nombre-plato">Pan de Focaccia, Mini Brochetas de mozzarella, albahaca y tomate cherry fresco, Jamón cocido, Jamón crudo, Salamín, Aceitunas verdes, Berenjenas al escabeche, Papas fritas, Palitos, Maní, Queso tybo</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">TABLA DE QUESOS</span><span class="nombre-plato">Queso tybo, Queso de pesto, Queso Roquefort, Queso Mar del plata, Aceitunas verdes y frutos secos, Mini Brochetas de mozzarella, albahaca y tomate cherry fresco</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">TABLA MIXTA</span><span class="nombre-plato">Salchichas de copetín, Empanaditas de jamón y queso, Papas fritas clásicas, Mini burgers en pan de chip, Mozzarellitas, Tequeños venezolanos pequeños, Milanesitas de carne, Chicken fingers, Pan de Focaccia calentito, Jamón cocido, Salamin, Queso tybo, Berenjenas al escabeche, Dips de cheddar y Bbq</span><span class="precio-plato"></span></li>
+  <ul class="lista-bebidas">
+    <li>
+      <div class="item-info">
+        <span class="nombre">TABLA FRÍA</span>
+        <span class="descripcion">Pan de Focaccia, Mini Brochetas de mozzarella, albahaca y tomate cherry fresco, Jamón cocido, Jamón crudo, Salamín, Aceitunas verdes, Berenjenas al escabeche, Queso tybo</span>
+<div class="descripcion-item">
+      <span class="descripcion">Para dos personas</span>
+      <span class="precio">$21.000</span>
+	<span class="descripcion">Para cuatro personas</span>
+      <span class="precio">$28.000</span>
+    </div>
+      </div>
+   </li>
+    <li>
+      <div class="item-info">
+        <span class="nombre">TABLA MIXTA</span>
+        <span class="descripcion">Salchichas de copetín, Empanaditas de jamón y queso, Papas fritas clásicas, Mozzarellitas, Tequeños venezolanos pequeños, Milanesitas de carne, Chicken fingers, Pan de Focaccia calentito, Jamón cocido, Salamin, Queso tybo, Berenjenas al escabeche, Dips de cheddar y Bbq</span>
+      </div>
+<span class="descripcion">Para dos personas</span>
+      <span class="precio">$33.500</span>
+	<span class="descripcion">Para cuatro personas</span>
+      <span class="precio">$45.000</span>
+    </li>
   </ul>
 </div>
 
-<!-- CARNES -->
-<div id="carnes" class="listaGastro">
+<!-- CARNES AL PLATO -->
+
+<div id="carnes"></div>
+
+
+<div class="listaSeccion">
   <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">CARNES AL PLATO CON GUARNICIÓN</h2>
+    <h2 class="tituloSecciones">CARNES AL PLATO CON GUARNICIÓN</h2>
   </div>
-  <ul class="lista-platos">
-    <li><span class="nombre-plato2">Bondiola al horno</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Vacío tiernizado al horno</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Matambre de cerdo a la pizza</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Asado al horno VIERNES/ SÁBADO Y DOMINGO</span><span class="precio-plato"></span></li>
+  <ul class="lista-bebidas">
+    <li><div class="item-info"><span class="nombre">Bondiola al horno</span></div><span class="precio">$18.000</span></li>
+    <li><div class="item-info"><span class="nombre">Vacío tiernizado al horno</span></div><span class="precio">$20.000</span></li>
+    <li><div class="item-info"><span class="nombre">Matambre de cerdo a la pizza</span></div><span class="precio">$19.500</span></li>
   </ul>
 </div>
 
-<!-- SÁNDWICHES DE FOCACCIA -->
-<div id="sandwichesFocaccia" class="listaGastro">
+<!-- SÁNDWICHES -->
+
+<div id="sandwiches"></div>
+
+<div class="listaSeccion">
   <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">SÁNDWICH DE FOCACCIA ACOMPAÑADO PAPAS FRITAS</h2>
+    <h2 class="tituloSecciones">SÁNDWICH DE FOCACCIA</h2>
   </div>
-  <ul class="lista-platos">
-    <li><span class="nombre-plato2">Bondiola</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Vacío</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Milanesa de carne con lechuga, tomate y huevo frito</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">Jamón crudo, queso, rúcula, cherrys confitados, pesto</span><span class="precio-plato"></span></li>
+  <ul class="lista-bebidas">
+    <li><div class="item-info"><span class="nombre">Bondiola</span></div><span class="precio">$17.000</span></li>
+    <li><div class="item-info"><span class="nombre">Vacío</span></div><span class="precio">$18.000</span></li>
+    <li><div class="item-info"><span class="nombre">Milanesa de carne con lechuga, tomate y huevo frito</span></div><span class="precio">$18.000</span></li>
+    <li><div class="item-info"><span class="nombre">Jamón crudo, queso, rúcula, cherrys confitados, pesto</span></div><span class="precio">$16.000</span></li>
   </ul>
 </div>
 
 <!-- BURGERS CLÁSICAS -->
-<div id="burgers" class="listaGastro">
+
+<div id="burgers"></div>
+
+<div class="listaSeccion">
   <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">BURGERS CLÁSICAS</h2>
+    <h2 class="tituloSecciones">BURGERS CLÁSICAS</h2>
   </div>
-  <ul class="lista-platos">
-    <li><span class="nombre-plato2">CHESSE BURGER</span><span class="nombre-plato">Medallón de carne, salsa BBQ y cheddar en pan brioche</span><span class="precio-plato">$13.000</span></li>
-    <li><span class="nombre-plato2">DOBLE CHESSE BURGER</span><span class="nombre-plato">Doble medallón de carne, salsa BBQ y cheddar en pan brioche</span><span class="precio-plato">$15.000</span></li>
-    <li><span class="nombre-plato2">BACON</span><span class="nombre-plato">Medallón de carne, cheddar, panceta y salsa BBQ en pan brioche</span><span class="precio-plato">$13.000</span></li>
-    <li><span class="nombre-plato2">DOBLE BACON</span><span class="nombre-plato">Doble medallón de carne, cheddar, panceta y salsa BBQ en pan brioche</span><span class="precio-plato">$15.500</span></li>
-    <li><span class="nombre-plato2">COMPLETA</span><span class="nombre-plato">Medallón de carne, lechuga, tomate, huevo en pan brioche</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">COMPLETA DOBLE</span><span class="nombre-plato">Doble medallón de carne, lechuga, tomate, huevo en pan brioche</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">LA TANA</span><span class="nombre-plato">Medallón de carne, mozzarella, tomates cherry confitados, rúcula y pesto en pan brioche</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">LA TANA DOBLE</span><span class="nombre-plato">Doble medallón de carne, mozzarella, tomates cherry confitados, rúcula y pesto en pan brioche</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">LUNÁTICA</span><span class="nombre-plato">Medallón de carne, lechuga, tomate, palta y nachos con cheddar en pan brioche</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">LUNÁTICA DOBLE</span><span class="nombre-plato">Doble medallón de carne, lechuga, tomate, palta y nachos con cheddar en pan brioche</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">CÓSMICA</span><span class="nombre-plato">Pan brioche tostado, medallón de carne, queso Cheddar, cebolla grillada, pepinos, panceta crispy, salsa picante de autor</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato2">CÓSMICA DOBLE</span><span class="nombre-plato">Pan brioche tostado, doble medallón de carne, queso Cheddar, cebolla grillada, pepinos, panceta crispy, salsa picante de autor</span><span class="precio-plato"></span></li>
-    
-    <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">EXTRAS</h2>
-  </div>
-  <ul class="lista-platos">
-    <li><span class="nombre-plato2">Medallón</span><span class="precio-plato">$3.500</span></li>
-    <li><span class="nombre-plato2">Panceta</span><span class="precio-plato">$3.000</span></li>
-    <li><span class="nombre-plato2">Cheddar</span><span class="precio-plato">$3.000</span></li>
+  <ul class="lista-bebidas">
+    <li><div class="item-info"><span class="nombre">CHESSE BURGER</span></div><span class="precio">$14.000</span></li>
+    <li><div class="item-info"><span class="nombre">DOBLE CHESSE BURGER</span></div><span class="precio">$16.000</span></li>
+    <li><div class="item-info"><span class="nombre">BACON</span></div><span class="precio">$14.500</span></li>
+    <li><div class="item-info"><span class="nombre">DOBLE BACON</span></div><span class="precio">$16.500</span></li>
+    <li><div class="item-info"><span class="nombre">COMPLETA</span></div><span class="precio">$17.500</span></li>
+    <li><div class="item-info"><span class="nombre">COMPLETA DOBLE</span></div><span class="precio">$18.500</span></li>
+    <li><div class="item-info"><span class="nombre">LA TANA</span><span class="descripcion">Medallón de carne, mozzarella, tomate , rúcula y pesto en pan brioche</span></div><span class="precio">$16.000</span></li>
+    <li><div class="item-info"><span class="nombre">LA TANA DOBLE</span><span class="descripcion">Doble medallón de carne, mozzarella, tomate , rúcula y pesto en pan brioche</span></div><span class="precio">$18.000</span></li>
+    <li><div class="item-info"><span class="nombre">LUNÁTICA</span><span class="descripcion">Medallón de carne, lechuga, tomate, palta y nachos con cheddar en pan brioche</span></div><span class="precio">$16.500</span></li>
+    <li><div class="item-info"><span class="nombre">LUNÁTICA DOBLE</span><span class="descripcion">Doble medallón de carne, lechuga, tomate, palta y nachos con cheddar en pan brioche</span></div><span class="precio">$18.500</span></li>
+    <li><div class="item-info"><span class="nombre">CÓSMICA</span><span class="descripcion">Pan brioche tostado, medallón de carne, queso Cheddar, cebolla grillada, pepinos, panceta crispy, salsa picante de autor</span></div><span class="precio">$17.000</span></li>
+    <li><div class="item-info"><span class="nombre">CÓSMICA DOBLE</span><span class="descripcion">Pan brioche tostado, doble medallón de carne, queso Cheddar, cebolla grillada, pepinos, panceta crispy, salsa picante de autor</span></div><span class="precio">$19.000</span></li>
   </ul>
 
+    <div>
+      <h2 class="tituloSecciones">EXTRAS</h2>
+    </div>
+
+  <ul class="lista-bebidas">
+    <li><div class="item-info"><span class="nombre">MEDALLÓN</span></div><span class="precio">$3.000</span></li>
+    <li><div class="item-info"><span class="nombre">PANCETA</span></div><span class="precio">$3.000</span></li>
+    <li><div class="item-info"><span class="nombre">CHEDDAR</span></div><span class="precio">$3.000</span></li>
   </ul>
 </div>
 
-
 <!-- PIZZA ROMANA RECTANGULAR -->
-<div id="pizza" class="listaGastro">
+
+<div id="pizza"></div>
+
+<div class="listaSeccion">
   <div class="titulo-container">
-    <h2 class="tituloSeccionesGastro">PIZZA ROMANA RECTANGULAR (8 porciones)</h2>
+    <h2 class="tituloSecciones">PIZZA ROMANA RECTANGULAR (8 porciones)</h2>
   </div>
-  <ul class="lista-platos">
-    <li><span class="nombre-plato">Margherita</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato">Fugazza</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato">Calabresa</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato">Jamón y Morrón</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato">4 Quesos</span><span class="precio-plato"></span></li>
-    <li><span class="nombre-plato">Rúcula y crudo</span><span class="precio-plato"></span></li>
+  <ul class="lista-bebidas">
+    <li><div class="item-info"><span class="nombre">Margherita</span><span class="descripcion">Pomodoro, mozzarella y albahaca</span></div><span class="precio">$19.900</span></li>
+    <li><div class="item-info"><span class="nombre">Fugazza</span></div><span class="precio">$21.900</span><span class="descripcion">Cebolla, mozzarella, orégano</span>
+    <li><div class="item-info"><span class="nombre">Napolitana</span></div><span class="precio">$24.000</span><span class="descripcion2">Pomodoro, mozzarella, rodajas de tomate fresco y orégano</span>
+    <li><div class="item-info"><span class="nombre">Calabresa</span><span class="precio">$23.900</span></div><span class="descripcion">Pomodoro, mozzarella y salamín</span>
+    <li><div class="item-info"><span class="nombre">Jamón y Morrón</span><span class="descripcion">Mozzarella, jamón y morron</span></div><span class="precio">$24.200</span></li>
+    <li><div class="item-info"><span class="nombre">4 Quesos</span></div><span class="precio">$26.000</span><span class="descripcion2">Queso crema, mozzarella, roquefort y provoleta rallada</span></li>
+    <li><div class="item-info"><span class="nombre">Rúcula y crudo</span><span class="descripcion">Pomodoro mozzarella rúcula y crudo</span></div><span class="precio">$26.900</span></li>
   </ul>
 </div>
 

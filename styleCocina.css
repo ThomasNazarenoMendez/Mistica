@@ -5,19 +5,18 @@
 }
 
 /* body */
-body {
-  min-height: 100vh;
-
-  /* Fondo */
-  background-image: url("../Imgs/fondo2.png");
-  background-repeat: no-repeat;       /* que no se repita */
-  background-position: center;        /* centrado */
-  background-size: cover;             /* que cubra toda la pantalla */
-  background-attachment: fixed;       /* para que no se mueva al scrollear */
-
-  /* Suavizado de imagen */
-  image-rendering: auto;               /* evita pixelado */
+.fondo-sitio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  background-color: #000;
 }
+
+
 /* NAV */
 .navbar {
   position: fixed;
@@ -103,113 +102,182 @@ body {
   }
 }
 
-
-/* CONTENEDOR DE CADA SECCIÓN */
-.listaGastro {
-  background-color: rgba(255, 255, 255, 0.05); /* fondo semitransparente */
-  border: 2px solid #c59d5f; /* borde dorado suave */
-  border-radius: 15px;
-  padding: 25px 30px;
-  margin-bottom: 40px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center; /* todo centrado dentro del div */
-}
-
-/* TÍTULOS DE SECCIÓN CON LÍNEAS */
-
 .tituloPrincipal {
   display: flex;
   justify-content: center; /* horizontal */
   align-items: center;     /* vertical */
   color: #fff;
   margin-top: 2rem;
-  font-size: 70px;
+  font-size: 50px;
   margin-bottom: 2rem;
 }
 
-.titulo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.tituloSeccionesGastro {
-  position: relative;
+/* BODY */
+body {
+  min-height: 100vh;
+  background-image: url("../Imgs/fondo2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  image-rendering: auto;
+  font-family: Arial, sans-serif;
   color: #fff;
-  font-size: 28px;
-  font-weight: 700;
+}
+
+/* TÍTULO PRINCIPAL */
+.tituloPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 2rem 0;
+  font-size: 50px;
+}
+
+/* CONTENEDOR DE SECCIONES */
+.listaSeccion {
+  margin: 1rem;
+  margin-bottom: 20px;
+  border: 2px solid #c59d5f;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+/* TÍTULO DE SECCIÓN */
+.tituloSecciones2 {
+  color: #c59d5f;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #c59d5f;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
   text-align: center;
-  margin: 15px 0;
+  font-size: 22px;
 }
 
-/* LÍNEAS ARRIBA Y ABAJO DEL TÍTULO */
-.tituloSeccionesGastro::before,
-.tituloSeccionesGastro::after {
-  content: "";
-  display: block;
-  width: 80%;
-  height: 2px;
-  background-color: #c59d5f; /* dorado */
-  margin: 8px auto;
+.tituloSecciones {
+  color: #c59d5f;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #c59d5f;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 27px;
 }
 
-/* LISTA DE PLATOS */
-.lista-platos {
+
+
+/* LISTA */
+.lista-bebidas {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
-  display: inline-block; /* para centrar la lista */
+  margin: 0;
 }
 
-/* CADA ELEMENTO */
-.lista-platos li {
+.lista-bebidas li {
   display: flex;
-  justify-content: center; /* centrado horizontal */
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 10px 0;
-  flex-wrap: wrap;
   border-bottom: 1px solid rgba(255,255,255,0.1);
+  flex-wrap: wrap;
 }
 
-.lista-platos li:last-child {
-  border-bottom: none;
+.item-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 70%;
+  min-width: 0;
 }
 
-/* NOMBRE DEL PLATO */
-.nombre-plato {
+.nombre {
+  font-weight: bold;
+  font-size: 22px;
   color: #fff;
+}
+
+.descripcion {
   font-size: 18px;
-  margin-right: 15px;
-  text-align: center;
-  
+  color: #ccc;
+  margin-top: 3px;
 }
 
-.nombre-plato2 {
+.descripcion2 {
+  font-size: 15px;
+  color: #ccc;
+  margin-top: 3px;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 22px;
   color: #fff;
-  font-size: 25px;
-  margin-right: 15px;
-  text-align: center;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  margin-bottom: 1rem;
+  flex: 0 0 auto;
+  margin-left: 10px;
 }
 
-/* PRECIO DEL PLATO */
-.precio-plato {
-  color: #c59d5f;
-  font-weight: 700;
-  text-align: center;
+/* Ítems con múltiples precios */
+.li-doble-precio .descripciones-precios {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .lista-platos li {
-    flex-direction: column;
+.descripcion-item {
+  display: grid;
+  grid-template-columns: 1fr auto; /* descripción ocupa todo lo que puede, precio se ajusta al contenido */
+  align-items: start; /* alinea el precio con la primera línea de la descripción */
+  gap: 10px; /* espacio entre descripción y precio */
+}
+
+.descripcion-item .descripcion {
+  color: #ccc;
+  font-size: 20px;
+}
+
+.descripcion-item .precio {
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+  .lista-bebidas li,
+  .li-doble-precio {
+    flex-wrap: wrap; /* mantiene precio al lado si cabe */
   }
+  
+  .descripcion-item .descripcion {
+    font-size: 16px;
+  }
+  .descripcion-item .precio {
+    font-size: 15px;
+  }
+  .nombre {
+    font-size: 20px;
+  }
+  .precio {
+    font-size: 20px;
+  }
+}
 
-  .nombre-plato {
-    margin-right: 0;
-    margin-bottom: 5px;
+/* FIX DEFINITIVO Safari – fondo pixelado */
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+    image-rendering: auto;
   }
 }
